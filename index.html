@@ -7,54 +7,36 @@
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<title>FIFA World Cup 1930-2018. Every team's final standing</title>
-		<style type="text/css"></style>
-		<script type="text/javascript" >
-    
-	(function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter47554777 = new Ya.Metrika({
-                    id:47554777,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<script src="highcharts.js"></script>
-<script src="dark-unica.js"></script>
-<noscript><div><img src="https://mc.yandex.ru/watch/47554777" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->	
+    <script src="highcharts.js"></script>
+    <script src="dark-unica.js"></script>
+		<style type="text/css">
+      table.description td {
+        vertical-align: top;
+        padding: 0.5em;
+      }
+    </style>
 	</head>
-
+<body style="margin: 1em auto; max-width: 1200px">
 <div id="container" style="height: 600px;"></div>
-
-<body>
-<p></p>
-<table>
-<tr>
-<td><p>График показывает, какие итоговые места занимали национальные сборные в финальных стадиях всех чемпионатов мира по футболу.</p>
-<p>Итоговые места рассчитываются по стадии вылета, количеству набранных очков, количеству побед, разнице забитых и пропущенных, количеству забитых, рейтингу фейр-плей. Россия, Германия, Индонезия, Чехия и Сербия посчитаны как правопреемники СССР, Западной Германии, Голландской Ост-Индии, Чехословакии и (Югославии и (Сербии и Черногории)). Данные до ¼ финала ЧМ-2018.</p>
-<p>Исправления и предложения, пожалуйста, присылайте на mail@gizh.ru. За подготовку данных спасибо <a href="http://tglink.ru/mapsanddata/">Maps&Data</a>.</p></td>
-<td><p> The graph shows final position of every team at every FIFA World Cup.</p>
-<p>Tiebreakers are the knockout stage, total points, amount of wins, goals difference, goals for, the fair-play rating. Russia, Germany, Indonesia, Czech Republic and Serbia are counted as successors to the USSR, West Germany, Dutch East Indies, Czechoslovakia and (Yugoslavia and (Serbia and Montenegro)). The data is preliminary up to 2018's ¼.</p>
-<p>Please send feedback to mail@gizh.ru. Thanks to <a href="http://tglink.ru/mapsanddata/">Maps&Data</a> for the data.</p></td>
-</tr>
+<table class="description" style="margin: 1em auto 1em; width: 100%">
+  <tr>
+    <td>График показывает, какие итоговые места занимали национальные сборные в финальных стадиях всех чемпионатов мира по футболу.</td>
+    <td>The graph shows final position of every team at every FIFA World Cup.</td>
+  </tr>
+  <tr>
+    <td>Итоговые места рассчитываются по стадии вылета, количеству набранных очков, количеству побед, разнице забитых и пропущенных, количеству забитых, рейтингу фейр-плей. Россия, Германия, Индонезия, Чехия и Сербия посчитаны как правопреемники СССР, Западной Германии, Голландской Ост-Индии, Чехословакии и (Югославии и (Сербии и Черногории)). Данные до ¼ финала ЧМ-2018.</td>
+    <td>Tiebreakers are the knockout stage, total points, amount of wins, goals difference, goals for, the fair-play rating. Russia, Germany, Indonesia, Czech Republic and Serbia are counted as successors to the USSR, West Germany, Dutch East Indies, Czechoslovakia and (Yugoslavia and (Serbia and Montenegro)). The data is preliminary up to 2018's ¼.</td>
+  </tr>
+  <tr>
+    <td>Исправления и предложения, пожалуйста, присылайте на mail@gizh.ru. За подготовку данных спасибо <a href="http://tglink.ru/mapsanddata/">Maps&Data</a>.</td>
+    <td>Please send feedback to mail@gizh.ru. Thanks to <a href="http://tglink.ru/mapsanddata/">Maps&Data</a> for the data.</td>
+  </tr>
 </table>
-<p><a href="http://gizh.ru">Графики и жизнь</a>, 2018</p>
+
+<ul>
+  <li><a href="http://gizh.ru">Графики и жизнь</a>, 2018</li>
+  <li><a href="https://github.com/apsheronets/fifa">Github</a></li>
+</ul>
 
 <script type="text/javascript">
 
@@ -186,6 +168,35 @@ Highcharts.chart('container', {
 		],
 });
 	</script>
-	
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47554777 = new Ya.Metrika({
+                    id:47554777,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/47554777" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
 	</body>
 </html>
