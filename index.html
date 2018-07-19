@@ -55,7 +55,7 @@ Highcharts.chart('container', {
 	},
 	
 	subtitle: {
-		text: 'While using phone, rotate landscape, then reload the page. Click on legend to reveal / hide the team'
+		text: 'While using phone, rotate landscape. Click on legend to reveal / hide the team'
 	},
 	
 	credits: {
@@ -109,8 +109,11 @@ Highcharts.chart('container', {
 		},
 	
 	series: [
-		{ name: 'Amount of teams', type: 'area', showInLegend: false, marker: false, color: 'black', lineWidth: 0, fillOpacity: 0.1, visible: true, states: { hover: { enabled: false}}, data: [[0,13],[1,16],[2,15],[3,13],[4,16],[10,24],[20,32]]},
-		{ name: 'Amount of teams after group stage', type: 'area', showInLegend: false, marker: false, color: 'black', lineWidth: 0,	fillOpacity: 0.1, visible: true, states: { hover: { enabled: false}}, data: [[0,4],[1,16],[2,15],[3,4],[4,8],[10,12],[11,16],[20,16]]},		
+		{ name: '0', type: 'area', showInLegend: false, marker: false, color: 'black', lineWidth: 0, fillOpacity: 0.1, states: { hover: { enabled: true, lineWidthPlus: 0}}, data: [[0,13],[1,16],[2,15],[3,13],[4,16],[10,24],[20,32]]},
+		{ name: '1', type: 'area', showInLegend: false, marker: false, color: 'black', lineWidth: 0, fillOpacity: 0.1, states: { hover: { enabled: true, lineWidthPlus: 0}}, data: [[0,4],[1,16],[2,15],[3,4],[4,8],[9,8],[10,12],[11,16],[20,16]]},
+		{ name: '2', type: 'area', showInLegend: false, marker: false, color: 'black', lineWidth: 0, fillOpacity: 0.1, states: { hover: { enabled: true, lineWidthPlus: 0}}, data: [[0,0],[9,0],[10,8],[20,8]]},	
+		{ name: '3', type: 'area', showInLegend: false, marker: false, color: 'black', lineWidth: 0, fillOpacity: 0.1, states: { hover: { enabled: true, lineWidthPlus: 0}}, data: [[0,4],[20,4]]},		
+		{ name: '4', type: 'area', showInLegend: false, marker: false, color: 'black', lineWidth: 0, fillOpacity: 0.1, states: { hover: { enabled: true, lineWidthPlus: 0}}, data: [[0,2],[2,2],[3,0],[4,2],[20,2]]},	
 		
 		{ name: 'Algeria', visible: false, data: [ null, null, null, null, null, null, null, null, null, null, null, 13, 22, null, null, null, null, null, 28, 14, null ], color: 'green', marker: { symbol: 'url(gif/dz.gif)'} },
 		{ name: 'Angola', visible: false, data: [ null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 23, null, null, null ], color: 'red', marker: { symbol: 'url(gif/ao.gif)'} },
